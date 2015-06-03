@@ -9,28 +9,9 @@
 import UIKit
 
 class Snap: UIViewController {
-
-    var animator: UIDynamicAnimator?
-    var snap: UISnapBehavior?
-    
-    @IBOutlet var blueBox: UIView!
-    
-    @IBAction func tapHandler(sender: UITapGestureRecognizer) {
-    
-        let tapLocation = sender.locationInView(self.view)
-        
-        if snap != nil{
-            animator?.removeAllBehaviors()
-        }
-        
-        snap = UISnapBehavior(item: self.blueBox, snapToPoint: tapLocation)
-        animator?.addBehavior(snap)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        animator = UIDynamicAnimator(referenceView: self.view)
         
     }
 

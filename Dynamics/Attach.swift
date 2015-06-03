@@ -10,28 +10,9 @@ import UIKit
 
 class Attach: UIViewController {
 
-    var animator: UIDynamicAnimator?
-    var attach: UIAttachmentBehavior?
-    var gravity: UIGravityBehavior?
-    
-    @IBOutlet var anchor: UIView!
-    @IBOutlet var blueBox: UIView!
-    
-    @IBAction func panHandler(sender: UIPanGestureRecognizer) {
-        
-        let panLocation = sender.locationInView(self.view)
-        attach?.anchorPoint = panLocation
-        anchor.center = panLocation
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        gravity = UIGravityBehavior(items: [blueBox])
-        attach = UIAttachmentBehavior(item: self.blueBox, attachedToAnchor: CGPoint(x: self.anchor.center.x, y: self.anchor.center.y))
-        animator = UIDynamicAnimator(referenceView: self.view)
-        animator?.addBehavior(gravity)
-        animator?.addBehavior(attach)
         
     }
 

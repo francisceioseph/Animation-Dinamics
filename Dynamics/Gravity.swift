@@ -10,17 +10,8 @@ import UIKit
 
 class Gravity: UIViewController {
 
-    @IBOutlet var blueBox: UIView!
-    var animator: UIDynamicAnimator?
-    var gravity: UIGravityBehavior?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        animator = UIDynamicAnimator(referenceView: self.view)
-        gravity = UIGravityBehavior(items: [self.blueBox])
-        
-        animator?.addBehavior(gravity)
         
     }
 

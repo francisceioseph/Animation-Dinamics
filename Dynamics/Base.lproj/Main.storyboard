@@ -20,6 +20,25 @@
             </objects>
             <point key="canvasLocation" x="-191" y="-45"/>
         </scene>
+        <!--Gravity-->
+        <scene sceneID="y4J-wy-20x">
+            <objects>
+                <viewController id="QUt-7J-2Ui" customClass="Gravity" customModule="Dynamics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D9L-p5-Gbu"/>
+                        <viewControllerLayoutGuide type="bottom" id="7cB-9b-4zH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ock-kU-FPm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F9m-Ml-Z3F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwT-lE-Ajj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290" y="-706"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="1Y7-sL-emd">
             <objects>
@@ -46,7 +65,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="ItW-Z4-zI3" kind="push" id="ycA-Lk-X7r"/>
+                                            <segue destination="QUt-7J-2Ui" kind="push" id="2Oy-UQ-vmb"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Vpm-uu-9rV" style="IBUITableViewCellStyleDefault" id="pry-oS-hvT">
@@ -161,23 +180,9 @@
                     <view key="view" contentMode="scaleToFill" id="ofm-M8-A43">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gce-DH-Tbr">
-                                <rect key="frame" x="0.0" y="328" width="154" height="32"/>
-                                <color key="backgroundColor" red="0.90000000000000002" green="0.13500000000000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kg2-pc-pp7">
-                                <rect key="frame" x="100" y="99" width="120" height="120"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Gravity and Collision" id="Qzk-HA-Za6"/>
-                    <connections>
-                        <outlet property="blueBox" destination="Kg2-pc-pp7" id="34U-Fz-abT"/>
-                        <outlet property="redBarrier" destination="gce-DH-Tbr" id="w18-e2-3Nl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lis-2u-0YG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,23 +199,9 @@
                     <view key="view" contentMode="scaleToFill" id="bdL-Tn-HVY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CXG-Wk-6ie">
-                                <rect key="frame" x="254" y="116" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hYD-aC-tRY">
-                                <rect key="frame" x="16" y="116" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.90000000000000002" green="0.13500000000000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Push" id="fUL-MT-hPm"/>
-                    <connections>
-                        <outlet property="blueBox" destination="CXG-Wk-6ie" id="KNb-Ld-dD6"/>
-                        <outlet property="redBox" destination="hYD-aC-tRY" id="0UD-5K-YO4"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3R8-In-85o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,16 +218,6 @@
                     <view key="view" contentMode="scaleToFill" id="xo6-fr-u1I">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ay-oa-ccf">
-                                <rect key="frame" x="145" y="264" width="30" height="30"/>
-                                <color key="backgroundColor" red="0.90000000000000002" green="0.13500000000000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V8b-Kx-222">
-                                <rect key="frame" x="88" y="72" width="120" height="120"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
@@ -244,10 +225,6 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Attach" id="fPL-Ea-dXZ"/>
-                    <connections>
-                        <outlet property="anchor" destination="8ay-oa-ccf" id="DZJ-zn-Vuw"/>
-                        <outlet property="blueBox" destination="V8b-Kx-222" id="08H-lr-l2B"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N5f-H7-cA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="cBI-1M-swb">
@@ -269,59 +246,13 @@
                     <view key="view" contentMode="scaleToFill" id="gYI-wW-Yjj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="221-wq-cwM">
-                                <rect key="frame" x="123" y="409" width="75" height="30"/>
-                                <state key="normal" title="Show Alert">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="showAlert:" destination="qgt-iX-98H" eventType="touchUpInside" id="fFV-CP-PeC"/>
-                                </connections>
-                            </button>
-                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OVG-rE-Z51">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Application" id="Mzd-eB-6l7"/>
-                    <connections>
-                        <outlet property="overLayView" destination="OVG-rE-Z51" id="KDq-Jl-bCA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEt-ol-hrh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1130" y="-45"/>
-        </scene>
-        <!--Gravity-->
-        <scene sceneID="plg-lG-hJE">
-            <objects>
-                <viewController id="ItW-Z4-zI3" customClass="Gravity" customModule="Dynamics" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="C9u-3T-fle"/>
-                        <viewControllerLayoutGuide type="bottom" id="3xs-O6-dBa"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="d4t-OI-FLe" customClass="Grav">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nEV-ut-eBo">
-                                <rect key="frame" x="100" y="122" width="120" height="120"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Gravity" id="fqU-jJ-9DN"/>
-                    <connections>
-                        <outlet property="blueBox" destination="nEV-ut-eBo" id="LEg-st-gj9"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eBn-dU-MDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="268" y="-716"/>
         </scene>
         <!--Snap-->
         <scene sceneID="Nh9-2c-Cgj">
@@ -334,12 +265,6 @@
                     <view key="view" contentMode="scaleToFill" id="S0D-r0-n7a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJY-Wz-ZIz">
-                                <rect key="frame" x="91" y="131" width="120" height="120"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
@@ -347,9 +272,6 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Snap" id="t6x-ex-ZgJ"/>
-                    <connections>
-                        <outlet property="blueBox" destination="eJY-Wz-ZIz" id="4A6-H8-Kld"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aR-gD-23f" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="pCa-02-hxv">
