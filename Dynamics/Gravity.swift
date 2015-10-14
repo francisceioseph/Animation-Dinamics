@@ -10,9 +10,31 @@ import UIKit
 
 class Gravity: UIViewController {
 
+    @IBOutlet weak var yellowBox: UIView!
+    @IBOutlet weak var blueBox: UIView!
+    @IBOutlet weak var purpleBox: UIView!
+    
+    var animator: UIDynamicAnimator?
+    var gravity: UIGravityBehavior?
+    
+    var animator2: UIDynamicAnimator?
+    var gravity2: UIGravityBehavior?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        gravity = UIGravityBehavior(items: [yellowBox])
+        gravity?.gravityDirection = CGVector(dx: 0, dy: 0.2)
+        
+        gravity2 = UIGravityBehavior(items: [ blueBox, purpleBox])
+        gravity2?.gravityDirection = CGVector(dx: 0, dy: 0.4)
+
+        
+        animator = UIDynamicAnimator(referenceView: self.view)
+        animator?.addBehavior(gravity!)
+        
+        animator2 = UIDynamicAnimator(referenceView: self.view)
+        animator2?.addBehavior(gravity2!)
     }
 
     override func didReceiveMemoryWarning() {

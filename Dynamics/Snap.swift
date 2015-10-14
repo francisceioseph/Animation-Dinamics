@@ -10,14 +10,28 @@ import UIKit
 
 class Snap: UIViewController {
     
+    @IBOutlet weak var greenBox: UIView!
+    var animator:UIDynamicAnimator?
+    var snap:UISnapBehavior?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        animator = UIDynamicAnimator(referenceView: self.view)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func handleTap(sender: UITapGestureRecognizer) {
+        animator?.removeAllBehaviors()
+        
+        snap = UISnapBehavior(item: greenBox, snapToPoint: sender.locationInView(self.view))
+        snap?.damping = 0.2
+        
+        animator?.addBehavior(snap!)
+        
     }
     
 

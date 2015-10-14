@@ -10,15 +10,36 @@ import UIKit
 
 class Attach: UIViewController {
 
+    @IBOutlet weak var yellowBox: UIView!
+    @IBOutlet weak var blueBox: UIView!
+    
+    var animator: UIDynamicAnimator?
+    var attach: UIAttachmentBehavior?
+    var gravity: UIGravityBehavior?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        animator = UIDynamicAnimator(referenceView: self.view)
+        
+        attach = UIAttachmentBehavior(item: yellowBox, attachedToAnchor: blueBox.center)
+        attach?.frequency = 1.0
+        attach?.length = CGFloat(100.0)
+        gravity = UIGravityBehavior(items: [yellowBox])
+        
+        animator?.addBehavior(attach!)
+        animator?.addBehavior(gravity!)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func panHandler(sender: UIPanGestureRecognizer) {
+        let panLocation = sender.locationInView(view)
+        blueBox.center = panLocation;
+        attach?.anchorPoint = panLocation
     }
     
 

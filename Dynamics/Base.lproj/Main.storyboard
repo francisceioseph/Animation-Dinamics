@@ -31,9 +31,28 @@
                     <view key="view" contentMode="scaleToFill" id="ock-kU-FPm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F60-zc-vnd">
+                                <rect key="frame" x="2" y="104" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.86274509799999999" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBg-WA-Uf8">
+                                <rect key="frame" x="110" y="104" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbM-Qp-rBM">
+                                <rect key="frame" x="218" y="104" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Gravity" id="F9m-Ml-Z3F"/>
+                    <connections>
+                        <outlet property="blueBox" destination="ZBg-WA-Uf8" id="BLO-3B-NOQ"/>
+                        <outlet property="purpleBox" destination="kbM-Qp-rBM" id="JlY-DG-Rxs"/>
+                        <outlet property="yellowBox" destination="F60-zc-vnd" id="kyB-fK-C0X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwT-lE-Ajj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -180,9 +199,33 @@
                     <view key="view" contentMode="scaleToFill" id="ofm-M8-A43">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xz1-fH-gkx">
+                                <rect key="frame" x="191" y="394" width="118" height="23"/>
+                                <color key="backgroundColor" red="0.2588235438" green="0.55294120309999995" blue="0.90196079019999997" alpha="0.80000001190000003" colorSpace="deviceRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SBT-uN-9Y3">
+                                <rect key="frame" x="10" y="257" width="118" height="23"/>
+                                <color key="backgroundColor" red="0.2588235438" green="0.55294120309999995" blue="0.90196079019999997" alpha="0.80000001190000003" colorSpace="deviceRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rug-tc-dT4">
+                                <rect key="frame" x="112" y="86" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0DN-ot-azg">
+                                <rect key="frame" x="161" y="173" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Gravity and Collision" id="Qzk-HA-Za6"/>
+                    <connections>
+                        <outlet property="barrier1" destination="SBT-uN-9Y3" id="sQa-Nu-Th9"/>
+                        <outlet property="barrier2" destination="Xz1-fH-gkx" id="d8p-pR-hqY"/>
+                        <outlet property="orangeBox" destination="rug-tc-dT4" id="JkD-uX-bUY"/>
+                        <outlet property="redBox" destination="0DN-ot-azg" id="Fe9-yz-Rse"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lis-2u-0YG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -199,9 +242,23 @@
                     <view key="view" contentMode="scaleToFill" id="bdL-Tn-HVY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yyo-Fw-aci">
+                                <rect key="frame" x="77" y="110" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.86274509799999999" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q2G-z0-S9e">
+                                <rect key="frame" x="194" y="110" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Push" id="fUL-MT-hPm"/>
+                    <connections>
+                        <outlet property="blueBox" destination="Q2G-z0-S9e" id="5lS-vb-lXh"/>
+                        <outlet property="yellowBox" destination="Yyo-Fw-aci" id="NrG-z9-08y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3R8-In-85o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -218,6 +275,16 @@
                     <view key="view" contentMode="scaleToFill" id="xo6-fr-u1I">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kob-aB-RuF">
+                                <rect key="frame" x="119" y="166" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.86274509799999999" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p2d-an-Nvr">
+                                <rect key="frame" x="204" y="259" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
@@ -225,11 +292,15 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Attach" id="fPL-Ea-dXZ"/>
+                    <connections>
+                        <outlet property="blueBox" destination="p2d-an-Nvr" id="Q6O-mR-kpe"/>
+                        <outlet property="yellowBox" destination="kob-aB-RuF" id="5GH-Pk-NEB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N5f-H7-cA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="cBI-1M-swb">
                     <connections>
-                        <action selector="panHandler:" destination="VeB-G7-Vbb" id="HZN-bp-VxQ"/>
+                        <action selector="panHandler:" destination="VeB-G7-Vbb" id="X3k-3k-MKO"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
@@ -265,6 +336,12 @@
                     <view key="view" contentMode="scaleToFill" id="S0D-r0-n7a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rb5-yp-sYC">
+                                <rect key="frame" x="66" y="201" width="122" height="122"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.84705882349999995" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
@@ -272,11 +349,14 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Snap" id="t6x-ex-ZgJ"/>
+                    <connections>
+                        <outlet property="greenBox" destination="Rb5-yp-sYC" id="0eE-Hh-QOc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aR-gD-23f" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="pCa-02-hxv">
                     <connections>
-                        <action selector="tapHandler:" destination="rRl-Hz-R59" id="raN-ds-qW2"/>
+                        <action selector="handleTap:" destination="rRl-Hz-R59" id="8Eg-L0-Oic"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
